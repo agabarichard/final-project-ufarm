@@ -1,0 +1,64 @@
+.signup-box {
+	background-color:white;
+	color: #333;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	width: 300px;
+	box-shadow: 0px 0px 10px #ccc;
+	border-radius: 5px;
+	margin-top: 65px;
+
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+	border-radius: 3px;
+	border: none;
+	box-shadow: 0px 0px 5px #ccc;
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+input[type="submit"] {
+	background-color: #333;
+	border: none;
+	border-radius: 3px;
+	color: #b82424;
+	cursor: pointer;
+	padding: 10px;
+	width: 100%;
+}
+
+input[type="submit"]:hover {
+	background-color: #555;
+}
+.signup-box1{
+	background-image: url(/public/imgs/bee\ haves.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+}
+body{
+    background-color:green ;
+    text-align: center;
+    background-image: url(/public/imgs/bee\ haves.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+}

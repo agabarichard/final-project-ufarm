@@ -1,0 +1,379 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(href='/css/bootstrap-5.3.0-alpha1/dist/css/bootstrap.css' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css')
+  link(rel='stylesheet' href='css/custom/stylesheet.css')
+  title Products that are ready for sell
+link(rel='stylesheet' href='/style/style.css')
+div(w3-include-html='../nav.pug')
+center
+  h1
+    b  We have the following products  on sell
+h3 
+  p You  can make orders on different products in which they will be derivered to you either by home derivery or direct pickup
+a.card-link(href='######')
+  img(src='/imgs/shopping icon.png' style='width:80px;height:100px;')
+  | &quot;Ordered Items&quot;
+hr
+table.table
+  thead
+    tr
+      th(scope='col') ITEM
+      th(scope='col') PRODUCT
+      th(scope='col') EXACT AMOUNT AND DISCOUNT
+      th(scope='col') ORDER
+  tbody
+    tr
+      th(scope='row') 1
+      td
+        .card(style='width: 18rem;')
+          .card-body
+            h3.card-title Irish potatoes
+            h4.card-subtitle.mb-2.text-muted High quality carrots
+            img(src='/imgs/-Irish potatoes6.jpg' style='width:200px;height:150px;')
+            a.card-link(href='/imgs/irish potatoes pdf.pdf')
+              p To know more on irish potatoes
+      td
+        | Ugx.200,000/= Per sack 
+        br
+        |               Discount: 8.4%
+      td
+        .col.form-group
+          label.form-check.form-check-inline
+            input#Order.form-check-input(type='checkbox' name='Order' value='Order')
+            span.form-check-label Order 
+            small#ordErr
+    tr
+      th(scope='row') 2
+      td
+        .card(style='width: 18rem;')
+          .card-body
+            h3.card-title Carrots
+            img(src='/imgs/carrots.jpg' style='width:200px;height:150px;')
+            a.card-link(href='/imgs/carrots pdf.pdf')
+              p To know more on carrots
+      td
+        | Ugx.150,000/= Per sack 
+        br
+        |               Discount: 3.5%
+      td
+        .col.form-group
+          label.form-check.form-check-inline
+            input#Order.form-check-input(type='checkbox' name='Order' value='Order')
+            span.form-check-label Order 
+            small#ordErr
+    tr
+      th(scope='row') 3
+      td
+        .card(style='width: 18rem;')
+          .card-body
+            h3.card-title Ovacadoes
+            img(src='/imgs/ovacado.webp' style='width:200px;height:150px;')
+            a.card-link(href='/imgs/ovacado pdf.pdf')
+              p To know more on ovacadoes
+      td
+        | Ugx.40,000/= Per besin 
+        br
+        |               Discount: 5%
+      td
+        .col.form-group
+          label.form-check.form-check-inline
+            input#Order.form-check-input(type='checkbox' name='Order' value='Order')
+            span.form-check-label Order 
+            small#ordErr
+    tr
+      th(scope='row') 4
+      td
+        .card(style='width: 18rem;')
+          .card-body
+            h3.card-title  Jackfruits
+            img(src='/imgs/jack fruit.jpg' style='width:200px;height:150px;')
+            a.card-link(href='/imgs/jack fruit growing pdf.pdf')
+              p  To know more on jackfruit
+      td
+        | Ugx.40,000/= Per banch
+        br
+        |               Discount: 5%
+      td
+        .col.form-group
+          label.form-check.form-check-inline
+            input#Order.form-check-input(type='checkbox' name='Order' value='Order')
+            span.form-check-label Order 
+            small#ordErr
+    tr
+      th(scope='row') 5
+      td
+        .card(style='width: 18rem;')
+          .card-body
+            h3.card-title Cabbages
+            img(src='/imgs/quality cabbages.jpg' style='width:200px;height:150px;')
+            a.card-link(href='/imgs/cabbages pdf.pdf')
+              p To know more on cabbages
+      td
+        | Ugx.80,000/= Per sack 
+        br
+        |               Discount: 7.9%
+      td
+        .col.form-group
+          label.form-check.form-check-inline
+            input#Order.form-check-input(type='checkbox' name='Order' value='Order')
+            span.form-check-label Order 
+            small#ordErr
+    tr
+      th(scope='row') 6
+      td
+        .card(style='width: 18rem;')
+          .card-body
+            h3.card-title Ground Nuts
+            img(src='/imgs/qality g nuts.jpg' style='width:200px;height:150px;')
+            a.card-link(href='/imgs/Groundnut Production pdf.pdf')
+              p To know more about ground nuts
+      td
+        | Ugx.100,000/= Per sack 
+        br
+        |               Discount: 12%
+      td
+        .col.form-group
+          label.form-check.form-check-inline
+            input#Order.form-check-input(type='checkbox' name='Order' value='Order')
+            span.form-check-label Order 
+            small#ordErr
+    tr
+      th(scope='row') 7
+      td
+        .card(style='width: 18rem;')
+          .card-body
+            h3.card-title Tomatoes
+            img(src='/imgs/quality tomatoes.jpg' style='width:200px;height:150px;')
+            a.card-link(href='/imgs/Tomato pdf.pdf')
+              p To know more on tomatoes
+      td
+        | Ugx.40,000/= Per besin 
+        br
+        |               Discount: 5%
+      td
+        .col.form-group
+          label.form-check.form-check-inline
+            input#Order.form-check-input(type='checkbox' name='Order' value='Order')
+            span.form-check-label Order 
+            small#ordErr
+    tr
+      th(scope='row') 8
+      td
+        .card(style='width: 18rem;')
+          .card-body
+            h3.card-title  Wheat
+            img(src='/imgs/wheat.jpg' style='width:200px;height:150px;')
+            a.card-link(href='/imgs/wheat growing pdf.pdf')
+              p  To know more about wheat
+      td
+        | Ugx.100,000/= Per besin 
+        br
+        |               Discount: 5%
+      td
+        .col.form-group
+          label.form-check.form-check-inline
+            input#Order.form-check-input(type='checkbox' name='Order' value='Order')
+            span.form-check-label Order 
+            small#ordErr
+    tr
+      th(scope='row') 9
+      td
+        .card(style='width: 18rem;')
+          .card-body
+            h3.card-title  Pumpkins
+            img(src='/imgs/Various_Pumpkins.jpg' style='width:200px;height:150px;')
+            a.card-link(href='/imgs/Pumpkin-production pdf.pdf')
+              p To know more on pumpkins
+      td
+        | Ugx.80,000/= Per sack
+        br
+        |               Discount: 6.2%
+      td
+        .col.form-group
+          label.form-check.form-check-inline
+            input#Order.form-check-input(type='checkbox' name='Order' value='Order')
+            span.form-check-label  
+            small#ordErr
+    tr
+      th(scope='row') 10
+      td
+        .card(style='width: 18rem;')
+          .card-body
+            h3.card-title  String beans
+            img(src='/imgs/string beans.jpg' style='width:200px;height:150px;')
+            a.card-link(href='/imgs/#########') 
+              p To know more on string beans
+      td
+        | Ugx.40,000/= Per besin 
+        br
+        |               Discount: 5%
+      td
+        .col.form-group
+          label.form-check.form-check-inline
+            input#Order.form-check-input(type='checkbox' name='Order' value='Order')
+            span.form-check-label Order 
+            small#ordErr
+    tr
+      th(scope='row') 11
+      td
+        .card(style='width: 18rem;')
+          .card-body
+            h3.card-title  Mashrooms
+            img(src='/imgs/mashrooms.jpg' style='width:200px;height:150px;')
+            a.card-link(href='/imgs/Mushroom Growing in Uganda- Kenya- Tanzania and Rwanda pdf.pdf')
+              p  To know more on mashroom growing
+      td
+        | Ugx.150,000/= Per besin 
+        br
+        |               Discount: 15%
+      td
+        .col.form-group
+          label.form-check.form-check-inline
+            input#Order.form-check-input(type='checkbox' name='Order' value='Order')
+            span.form-check-label Order 
+            small#ordErr
+    tr
+      th(scope='row') 12
+      td
+        .card(style='width: 18rem;')
+          .card-body
+            h3.card-title Mangoes
+            img(src='/imgs/mangoes.jpg' style='width:200px;height:150px;')
+            a.card-link(href='/imgs/mango production in ug.pdf')
+              p To know more on mangoes
+      td
+        | Ugx.50,000/= Per besin 
+        br
+        |               Discount: 5%
+      td
+        .col.form-group
+          label.form-check.form-check-inline
+            input#Order.form-check-input(type='checkbox' name='Order' value='Order')
+            span.form-check-label Order 
+            small#ordErr
+    tr
+      th(scope='row') 13
+      td
+        .card(style='width: 18rem;')
+          .card-body
+            h3.card-title Oranges
+            img(src='/imgs/oranges.jpg' style='width:200px;height:150px;')
+            a.card-link(href='/imgs/fact-sheet-orange pfd.pdf')
+              p To know more on oranges
+      td
+        | Ugx.60,000/= Per besin 
+        br
+        |               Discount: 7.5%
+      td
+        .col.form-group
+          label.form-check.form-check-inline
+            input#Order.form-check-input(type='checkbox' name='Order' value='Order')
+            span.form-check-label Order 
+            small#ordErr
+    tr
+      th(scope='row') 14
+      td
+        .card(style='width: 18rem;')
+          .card-body
+            h3.card-title Broccoli
+            img(src='/imgs/broccoli.jpg' style='width:200px;height:150px;')
+            a.card-link(href='/imgs/BROCCOLI pdf.pdf')
+              p To know more on Broccoli
+      td
+        | Ugx.40,000/= Per besin 
+        br
+        |               Discount: 8%
+      td
+        .col.form-group
+          label.form-check.form-check-inline
+            input#Order.form-check-input(type='checkbox' name='Order' value='Order')
+            span.form-check-label Order 
+            small#ordErr
+    tr
+      th(scope='row') 15
+      td
+        .card(style='width: 18rem;')
+          .card-body
+            h3.card-title Egg-Plants
+            img(src='/imgs/Egg-Plant.jpg' style='width:200px;height:150px;')
+            a.card-link(href='/imgs/egg plant pdf.pdf')
+              | To know more on Egg plants
+      td
+        | Ugx.40,000/= Per besin 
+        br
+        |               Discount: 15%
+      td
+        .col.form-group
+          label.form-check.form-check-inline
+            input#Order.form-check-input(type='checkbox' name='Order' value='Order')
+            span.form-check-label Order 
+            small#ordErr
+    tr
+.form-check
+  input#invalidCheck2.form-check-input(type='checkbox' value='' required='')
+  label.form-check-label(for='invalidCheck2')
+    | I agree to order the all the selected items
+.col-12
+  // Select Basic
+  // Success message
+  // <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>
+  // Button
+  .form-group
+        label.col-md-4.control-label
+        .col-md-4
+          br
+          button.btn.btn-warning(type='submit') SUBMIT 
+footer
+  table.table
+    thead
+      tr
+        th(scope='col')
+          h1 contact us
+        th(scope='col')
+          h1 Quick Links
+        th(scope='col')
+          h1 More Updates
+    tbody
+      tr
+        td
+          img(src='/imgs/facebook icon.png' style='width:50px;height:50px;')
+          a(href='#') facebook
+          br
+          img(src='/imgs/whatsapp icon.jpg' style='width:50px;height:50px;')
+          a(href='#') Whatsapp
+          br
+          img(src='/imgs/tweeter icon.png' style='width:50px;height:50px;')
+          a(href='#') Tweeter
+          br
+          img(src='/imgs/linkedin icon.png' style='width:50px;height:50px;')
+          a(href='#') LinkedIn
+          br
+          img(src='/imgs/u tube icon.png' style='width:50px;height:50px;')
+          a(href='#') You Tube
+          br
+          img(src='/imgs/gmail log.png' style='width:50px;height:50px;')
+          a(href='#') ufarm@gmail.com
+        td
+          a(href='/index.html') HOME PAGE
+          br
+          a(href='/products/All.html') ALL PRODUCTS
+          br
+          a(href='/charts/uploads.html') UPLOADS
+          br
+          a(href='/Auth/regestor.html') REGISTOR AS AN AGRICULTURAL OFFICER (AO)
+          br
+          a(href='/Auth/urban farmer.html') REGISTOR AS AN URBAN FARMER
+          br
+          a(href='/Auth/login.html') LOG IN
+        td
+          a(href='/products/horcticulturs.html') HOTICULTURE
+          br
+          a(href='/products/dairly.htm') DAIRLY
+          br
+          a(href='/products/poultry.html') POULTRY
+          br
+script(src='/Js/custom.js')
+script(src='/css/bootstrap-5.3.0-alpha1/dist/js/bootstrap.js')

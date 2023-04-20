@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing elements in the dom with javascript</title>
+    <!-- <link rel="stylesheet" href="dom.css"> -->
+    <style>
+        html {
+            font-family: sans-serif;
+            color: #333;
+        }
+
+        body {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        div,
+        section {
+            padding: 10px;
+            margin: 5px;
+            border: 3px dotted blue;
+        }
+    </style>
+</head>
+<!-- id takes precedence over class -->
+<body>
+    <h1>Accessing elements in the dom</h1>
+    <h2> ID(#DEMO)</h2>
+    <div id="demo">Access me by ID</div>
+
+    <h2>Class(.demo)</h2>
+    <div class="demo">Access me by class 1 </div>
+    <div class="demo">Access me by class 2 </div>
+    <div class="demo">Access me by class 3 </div>
+
+    <h2>Tag Artical</h2>
+    <section>Access me by tag (1)</section>
+    <section>Access me by tag (2)</section>
+
+    <h2>Query selector</h2>
+    <div id="demo-query">Access me by query</div>
+ 
+    <h2>Query selector all</h2>
+    <div class="demo-query-all">Access me by Query selector (1)</div>
+    <div class="demo-query-all">Access me by Query selector (2)</div>
+    <br>
+
+    <button onclick="changeMe()">Click Me</button>
+    <p>Try to change me</p>
+    
+    <br>
+    <button id="pop">Click Me oops!</button>
+    <div id="opp"></div>
+
+    <!-- Accessing elements in the DOM  using JavaScript- embedded-->
+    <!-- <script>
+        // Access element by ID
+        const demoId = document.getElementById("demo")
+        demoId.style.border = '1px solid orange'; 
+
+        // Access elements by class name
+        let demoClass = document.getElementsByClassName("demo")
+        for(i=0; i<demoClass.length; i++){
+            demoClass[i].style.border = "2px solid blue"
+        }
+        // If you want to style an individual element
+        demoClass[0].style.border = "2px dotted red"
+
+        // Access elements by ID
+        let demoTag = document.getElementsByTagName("article")
+        for(i=0; i<demoTag.length; i++){
+            demoTag[i].style.border = "2px solid purple"
+        }
+
+        // Access element by query selector
+        let demoQuery = document.querySelector('#demo-query')
+        demoQuery.style.border = "2px solid maroon"
+
+        // Access elements by query selector all
+        let demoQueryAll = document.querySelectorAll(".demo-query-all")
+        //either use for loop
+        for(i=0; i<demoQueryAll.length; i++){
+            demoQueryAll[i].style.border = "2px solid green"
+        }
+        //or forEach
+        demoQueryAll.forEach(item =>{
+            item.style.border = "5px solid blue"
+        })
+
+        function changeMe(){
+            let p = document.querySelector("p")
+            p.textContent = "I changed because of inline event handler"
+            p.style.border = "2px dotted blue"
+            // console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", p.parentNode)
+        }
+
+        function changeMe2(){
+            let k = document.getElementById("opp")
+            k.textContent = "I changed because of an event handler"
+            k.style.border = "2px dotted red"
+        }
+
+        const butt = document.querySelector("#pop")
+        butt.onclick=changeMe2
+
+    </script> -->
+    <!-- Using external js file -->
+    <script src="./dom.js"></script>
+</body>
+
+</html>
