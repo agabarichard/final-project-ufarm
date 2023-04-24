@@ -21,7 +21,7 @@ head
           .input-group
             span.input-group-addon
               i.glyphicon.glyphicon-user
-            input.form-control(name='firstname' placeholder='Eg, Opio' type='text')
+            input.form-control(name='firstname' placeholder='Eg, Ainemazima' type='text')
       // Text input
       .form-group
         label.col-md-4.control-label Last name
@@ -29,7 +29,7 @@ head
           .input-group
             span.input-group-addon
               i.glyphicon.glyphicon-user
-            input.form-control(name='lastname' placeholder='Eg, James' type='text')
+            input.form-control(name='lastname' placeholder='Eg, Miria' type='text')
      
       // Text input
       .form-group
@@ -68,7 +68,7 @@ head
                 option(value='Female') Female
       // Text input
       .form-group
-        label.col-md-4.control-label Activities Involved
+        label.col-md-4.control-label Activities Undertaken
         .col-md-4.inputGroupContainer
           .input-group
             span.input-group-addon
@@ -92,33 +92,18 @@ head
             input.form-control(name='nin' placeholder='Eg, CM1234567890FT'   type='text')
       // Text input
       .form-group
-        label.col-md-4.control-label Resident Type
+        label.col-md-4.control-label Ward
         .col-md-4.inputGroupContainer
           .input-group
             span.input-group-addon
               i.glyphicon.glyphicon-earphone
-            select#batteryprice.form-select(type='text' name='Resident Type')
+            select#batteryprice.form-select(type='text' name='ward')
                 option(value='Default' selected='') Select
-                option(value='S') Single
-                option(value='M') Married
-                option(value='D') Deforced
-      // Text input
-      .form-group
-        label.col-md-4.control-label Direction to Home place
-        .col-md-4.inputGroupContainer
-          .input-group
-            span.input-group-addon
-              i.glyphicon.glyphicon-earphone
-            input.form-control(name='address' placeholder='village, Ward, Division, District' type='text')
-            // Text input
-            .form-group
-        label.col-md-4.control-label Period stayed in the Ward
-        .col-md-4.inputGroupContainer
-          .input-group
-            span.input-group-addon
-              i.glyphicon.glyphicon-earphone
-            input.form-control(name='Period stayed in the Ward' placeholder='Must be 10 years and above'  type='Period stayed in the Ward')
-                     
+                option(value='1') Urban Ward 1
+                option(value='2') Urban Ward 2
+                option(value='3') Urban Ward 3
+                option(value='4') Urban Ward 4
+      
       // Select Basic
       // Success message
       // <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>

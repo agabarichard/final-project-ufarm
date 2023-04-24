@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-router.get("/dairly", (req,res)=>{
+router.get("/diarly", (req,res)=>{
     res.render("diarly")
 })
 

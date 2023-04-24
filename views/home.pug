@@ -1,10 +1,10 @@
 head
   meta(charset='utf-8')
   meta(name='viewport' content='width=device-width, initial-scale=1')
-  link(href='/public/css/bootstrap-5.3.0-alpha1/dist/js/bootstrap.js' rel='stylesheet')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous')
   title Home page
-// nav starts here
-nav.navbar.bg-primary(data-bs-theme='dark')
+//nav starts here
+nav.navbar.bg-lightgreen(data-bs-theme='darkgreen')
   nav.navbar.navbar-expand-lg.bg-body-tertiary
     .container-fluid
       a.navbar-brand(href='#') U farm
@@ -13,36 +13,30 @@ nav.navbar.bg-primary(data-bs-theme='dark')
       #navbarSupportedContent.collapse.navbar-collapse
         ul.navbar-nav.me-auto.mb-2.mb-lg-0
           li.nav-item
-            a.nav-link.active(aria-current='page' href='#') Home
+            a.nav-link.active(aria-current='page' href='/home') Home
           li.nav-item
-            a.nav-link(href='#') Farmers
-          li.nav-item.dropdown
-            a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
-              | PRODUCTS
-            ul.dropdown-menu
-              li
-                a.account(href='#') Action
-              li
-                a.dropdown-item(href='#') Another action
-              li
-                hr.dropdown-divider
-              li
-                a.dropdown-item(href='#') Something else here
+            a.nav-link(href='/uploads') Uploads
           li.nav-item
-            a.nav-link.disabled
-              | Poducts
+            a.nav-link(href='/poutry') Poultry
+          li.nav-item
+            a.nav-link(href='/diarly') Diarly 
+          li.nav-item
+            a.nav-link(href='/###diarly') Hotculture 
+          
         form.d-flex(role='search')
           input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
           button.btn.btn-outline-success(type='submit') Search
-  img(src='/imgs/download.png' style='width:30px;height:50px;')
-  // nav ends here
-  h1 welcome to u farm
+  img(src='/imgs/final log of u farm.png' style='width:150px;height:110px;')
+
+legend 
+  center 
+    h1 Welcome to U-farm
   p
     | A farm (also called an agricultural holding) is an area of land that is devoted primarily to agricultural processes 
     | with the primary objective of producing food and other crops; it is the basic facility in food production
     br
   p
-    | [1] The name is used for specialized units such as arable farms, vegetable farms, fruit farms, dairy, pig and poultry
+    | 1. The name is used for specialized units such as arable farms, vegetable farms, fruit farms, dairy, pig and poultry
     | farms, and land used for the production of natural fiber, biofuel and other commodities. It includes ranches,
     | feedlots, orchards, plantations and estates, smallholdings and hobby farms, and includes the farmhouse and
     | agricultural buildings as well as the land. In modern times the term has been extended so as to include such
@@ -52,7 +46,7 @@ nav.navbar.bg-primary(data-bs-theme='dark')
     | about 75% of the world & apos;s agricultural land.
   br
   p
-    | [2] Modern farms in developed countries are highly mechanized. In the United States, livestock may be
+    | 2. Modern farms in developed countries are highly mechanized. In the United States, livestock may be
     | raised on range, land and finished in feedlots and the mechanization of crop production has brought about a great
     | decrease in the number of agricultural workers needed. In Europe, traditional family farms are giving way to larger
     | production units. In Australia, some farms are very large because the land is unable to support a high stocking
