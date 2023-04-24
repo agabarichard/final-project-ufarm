@@ -16,8 +16,7 @@ const User = require("./models/userModel")
 const config = require("./config/database");
 const diarlyRoutes = require("./routes/diarlyRoutes");
 const homeRoutes = require("./routes/homeRoute");
-const hortculturesRoutes = require("./routes/hortculturesRoutes");
-const indexRoutes = require("./routes/indexRoute");
+const hotcultureRoutes = require("./routes/hotcultureRoutes");
 const loginRoutes = require("./routes/loginRoute");
 const poultryRoutes= require("./routes/poultryRoute");
 const registerRoutes= require("./routes/registerRoute");
@@ -75,8 +74,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/",diarlyRoutes);
 app.use("/",homeRoutes);
-app.use("/",hortculturesRoutes);
-app.use("/",indexRoutes);
+app.use("/",hotcultureRoutes);
 app.use("/",loginRoutes);
 app.use("/",poultryRoutes);
 app.use("/",registerRoutes);
