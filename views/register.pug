@@ -4,7 +4,7 @@ head
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
   link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title Document
+  title Register as FO
   link(rel='stylesheet' href='/signup.css')
 .container
   form#contact_form.well.form-horizontal( name="signup" action='/signup' method='post')
@@ -22,7 +22,7 @@ head
           .input-group
             span.input-group-addon
               i.glyphicon.glyphicon-user
-            input.form-control(name='firstname' placeholder='Opio' type='text')
+            input.form-control(name='firstname' placeholder='Eg, Opio' type='text')
       // Text input
       .form-group
         label.col-md-4.control-label Last name
@@ -30,7 +30,7 @@ head
           .input-group
             span.input-group-addon
               i.glyphicon.glyphicon-user
-            input.form-control(name='lastname' placeholder='James' type='text')
+            input.form-control(name='lastname' placeholder='Eg, James' type='text')
      
       // Text input
       .form-group
@@ -90,7 +90,7 @@ head
           .input-group
             span.input-group-addon
               i.glyphicon.glyphicon-earphone
-            input.form-control(name='nin'  type='text')
+            input.form-control(name='nin' placeholder='Eg, CM1234567890FT'   type='text')
       // Text input
       .form-group
         label.col-md-4.control-label Resident Type
@@ -110,7 +110,7 @@ head
           .input-group
             span.input-group-addon
               i.glyphicon.glyphicon-earphone
-            input.form-control(name='address'  type='text')
+            input.form-control(name='address' placeholder='village, Ward, Division, District' type='text')
             // Text input
             .form-group
         label.col-md-4.control-label Period stayed in the Ward
@@ -118,15 +118,7 @@ head
           .input-group
             span.input-group-addon
               i.glyphicon.glyphicon-earphone
-            input.form-control(name='Period stayed in the Ward'  type='Period stayed in the Ward')
-      // Text input
-      .form-group
-        label.col-md-4.control-label Ward
-        .col-md-4.inputGroupContainer
-          .input-group
-            span.input-group-addon
-              i.glyphicon.glyphicon-earphone
-            select#batteryprice.form-select(type='text' name='ward')
+            input.form-control(name='Period stayed in the Ward' placeholder='Must be 10 years and above'  type='Period stayed in the Ward')
                      
       // Select Basic
       // Success message
