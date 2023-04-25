@@ -5,5 +5,6 @@ router.get("/products", (req,res)=>{
     res.render("products")
 })
 
+const User = require("../models/productsModel")
 
 module.exports = router

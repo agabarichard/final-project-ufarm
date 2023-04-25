@@ -29,6 +29,8 @@ const agricofficerRoutes = require("./routes/agricofficerRoute");
 const AllRoutes = require("./routes/AllRoute");
 const productsRoutes = require("./routes/productsRoute");
 const urbanregRoutes = require("./routes/urbanregRoutes");
+const ufuploadformRoutes = require("./routes/ufuploadformRoutes");
+const uploadedproductsRoutes = require("./routes/uploadedproductsRoutes");
 // const {config}  = require('process');
 
 app.use(session({
@@ -87,6 +89,8 @@ app.use("/",agricofficerRoutes);
 app.use("/",AllRoutes);
 app.use("/",productsRoutes);
 app.use("/",urbanregRoutes);
+app.use("/",ufuploadformRoutes);
+app.use("/",uploadedproductsRoutes)
 app.get("*", (req,res)=>{
     res.status(404).send("page does not exist")
 })
